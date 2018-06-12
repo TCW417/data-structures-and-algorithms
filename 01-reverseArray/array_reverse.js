@@ -1,6 +1,6 @@
 'use strict';
 
-const useVersion = 1;
+const useVersion = 4;
 
 const versions = [
   function arrayReverseRev0(arr) {
@@ -58,6 +58,22 @@ const versions = [
       });
       return newArr;
     })(arr);
+  },
+
+  function arrayReverseRev4(arr) {
+
+    const swap = (a, b, arr) => [arr[b], arr[a]] = [arr[a], arr[b]];
+
+    if (typeof arr !== 'object' || !arr.length) return undefined;
+
+    const newArr = arr.slice(0);
+
+    arr.every((_, i) => {
+      (i < newArr.length-1-i ? swap(i, newArr.length-1-i, newArr) : false);
+    });
+
+    return newArr;
+
   }
 ];
 
