@@ -1,6 +1,6 @@
 'use strict';
 
-const useVersion = 4;
+const useVersion = 1;
 
 const versions = [
   function arrayReverseRev0(arr) {
