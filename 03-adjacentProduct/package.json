@@ -14,7 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest --coverage"
+    "test": "eslint . && jest --coverage"
   },
   "keywords": [],
   "author": "",
