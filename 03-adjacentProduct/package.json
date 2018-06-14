@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Reverse an Array in place.",
   "main": "array_adjacent_product.js",
-  "dependencies": {
+  "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
@@ -12,9 +12,10 @@
     "eslint-plugin-jest": "^21.17.0",
     "jest": "^23.1.0"
   },
-  "devDependencies": {},
+  "dependencies": {},
   "scripts": {
-    "test": "eslint . && jest --coverage"
+    "test": "eslint . && jest --coverage",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
