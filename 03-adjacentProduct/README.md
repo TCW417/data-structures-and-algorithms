@@ -8,7 +8,7 @@ Write a function called `LargestProduct` that takes an 2D array parameter. Retur
 
 ## Solution
 
-Travis testing enabled.
+Travis testing enabled.  Or I thought it was. This text meant to force it...
 
 This module has an inner (private) function, findMAP, that I had exported during initial development so I could test it using jest.  Once I had it working I "hid" it. Hope this is okay. 
 
