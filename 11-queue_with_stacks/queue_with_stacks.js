@@ -3,16 +3,16 @@
 const Queue = class {
   constructor() {
     this.queue = [];
-    this.temp = []; 
   }
 
   enqueue(value) {
+    const temp = [];
     for (let i = 0; i < this.queue.length; i += 1) {
-      this.temp.push(this.queue.pop());
+      temp.push(this.queue.pop());
     }
     this.queue.push(value);
-    for (let i = 0; i < this.temp.length; i += 1) {
-      this.queue.push(this.temp.pop());
+    for (let i = 0; i < temp.length; i += 1) {
+      this.queue.push(temp.pop());
     }
   }
 
