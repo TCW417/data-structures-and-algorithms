@@ -1,5 +1,6 @@
 // Time complexity for all traversals: O(n) where n is the number of nodes
-// Space complexity O(1)
+// Space complexity O(d) where d is the max depth of the tree. 
+// In a balanced tree this would be O(logn)
 
 const findMaximumValue = (tree) => {
   if (!tree) return null;
