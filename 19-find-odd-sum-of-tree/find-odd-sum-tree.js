@@ -1,7 +1,10 @@
 'use strict';
 
-const findOddSum = (tree) => {
+// findOddSum function
+export default (tree) => {
   if (!tree) return undefined;
+  
+  let sum = 0; 
 
   const preOrder = (t, cb) => {
     const stack = [t];
@@ -13,8 +16,7 @@ const findOddSum = (tree) => {
     }
     return undefined;
   };
-  let sum = 0; /* eslint-disable-line */
-  preOrder(tree, (v) => { sum += v % 1 === 1 ? v : 0; return undefined; });
+  preOrder(tree, (v) => { sum += v % 2 === 1 ? v : 0; return undefined; });
+  
+  return sum;
 };
-
-export default findOddSum;

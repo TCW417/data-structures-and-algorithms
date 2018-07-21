@@ -11,9 +11,9 @@ import findOddSum from '../find-odd-sum-tree';
 //            8   9
 //
 // so BF traversal should return 1 2 3 6 4 5 7 8 9
-describe('findMaximumValue test', () => {
-  test('result should be 9', () => {
-    const max = findMaximumValue(binaryTree.root);
-    expect(max).toEqual(5);
+describe('findOddSum test', () => {
+  test('result should be 25', () => {
+    const sum = findOddSum(binaryTree.root);
+    expect(sum).toEqual(25);
   });
 });

@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint . && jest --coverage",
+    "tests": "jest --coverage",
     "testWatch": "jest --coverage --watchAll",
     "test-nolint": "jest --coverage",
     "lint": "eslint ."
